@@ -8,7 +8,7 @@ Car::Car() : Vehicle()
 	numberOfDoors = 0;
 }
 
-Car::Car(string manufacturer, int yearBuilt, int doorNumber)
+Car::Car(string manufacturerTwo, int yearBuiltTwo, int doorNumber) : Vehicle(manufacturerTwo, yearBuiltTwo)
 {
 	numberOfDoors = doorNumber;
 }
