@@ -15,16 +15,16 @@ int main()
 
 	Vehicle vehicleOne;
 	Car carOne;
-	Truck truckOne;
+	Truck truckOne; // variables to hold vehicle information
 
-	cout << "Vehicle:" << endl << endl;
+	cout << "Vehicle:" << endl;
 	cout << "Enter the manufacturer: ";
 	getline(cin, manufacturer);
 	vehicleOne.setManufacturer(manufacturer);
 
 	cout << "Enter the year built: ";
 	cin >> yearBuilt;
-	vehicleOne.setYearBuilt(yearBuilt);
+	vehicleOne.setYearBuilt(yearBuilt); // gathers user input on vehicle info, sets vehicle info, then displays vehicle info
 
 	vehicleOne.displayInfo();
 
@@ -41,7 +41,7 @@ int main()
 
 	cout << "Enter the number of doors: ";
 	cin >> numberOfDoors;
-	carOne.setDoors(numberOfDoors);
+	carOne.setDoors(numberOfDoors); // gathers user input on car info, sets car info, then displays car info
 
 	carOne.displayInfo();
 
@@ -58,9 +58,9 @@ int main()
 
 	cout << "Enter the towing capacity: ";
 	cin >> towingCapacity;
-	truckOne.setTowingCapacity(towingCapacity);
+	truckOne.setTowingCapacity(towingCapacity); 
 
-	truckOne.displayInfo();
+	truckOne.displayInfo(); // gathers user input on truck information, sets truck info, then displays truck info
 
 	return 0;
 }
